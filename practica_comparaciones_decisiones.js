@@ -1,4 +1,4 @@
-let nota = 75;
+let nota = 100;
 
 if (nota >= 60){
     console.log("Felicidades, aprovaste con nota : ");
