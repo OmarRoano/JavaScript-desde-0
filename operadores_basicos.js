@@ -52,6 +52,8 @@ let esEstudiante = false;
 console.log(esMayorEdad || esEstudiante); 
 
 console.log("NOT : !");
+let esFinDeSemana = false;
+consol
 
 let calificacion = 9;
 let calificacion1 = 9;
