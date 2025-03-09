@@ -1,39 +1,65 @@
 body {
-    background: white;
+    background: #282f36;
     font-family: Arial, sans-serif;
-    max-width: 1000px;
+    max-width: 500px;
     margin: auto;
     padding: 20px;
+    color: white;
 }
-.comment-box {
+#cajaComentarios {
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
 }
-.comentario-entrada {
-    background: #f1f1f1;
+#comentarioEntrada {
+    background: white;
     width: 500px;
     padding: 10px;
-    margin-top: 10px;
     border-radius: 5px;
 }
-.delete-btn {
+.btnBorrar {
+    display: block;
+    width: 20%;
     background: red;
     color: white;
     border: none;
     padding: 5px;
     cursor: pointer;
     margin-top: 5px;
-    border: black solid 1px;
 }
 .contenedor{
     display: flex;
     flex-direction: column;
-}
-#cajaComentarios{
-    border: black solid 1px;
-    display: flex;
-    justify-content: center;
+    gap: 10px;
 }
 #botonAgregar{
     display: flex;
     justify-content: center;
+}
+button {
+    background: rgb(45, 215, 30);
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 40%;
+    border: 1px solid #586f88;
+}
+#cajaComentarios {
+    margin-top: 20px;
+    width: 480px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+}
+.comentario {
+    color: black;
+    border: 1px solid #586f88;
+    background: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 14px;
 }
