@@ -1,0 +1,12 @@
+body{
+    font-family: sans-serif;
+    margin: 20px;
+}
+#input_container {
+    margin-bottom: 10px;
+}
+#lista_compras li {
+    padding: 8px;
+    font-size: 20px;
+    border-bottom:  2px solid black;
+}

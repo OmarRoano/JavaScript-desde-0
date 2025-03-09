@@ -18,23 +18,22 @@ function celsiusToFarenheit(grados){
     return resultado;
 }
 
-function verPar(num){
+function esPar(num){
     if (num % 2 === 0){
-        console.log("El número " + num + " es par");
+        return console.log("El número " + num + " es par");
     }
     else {
-        console.log("El número"+ num + " NO es par");
+        return console.log("El número"+ num + " NO es par");
     }
 }
 
+console.log("Área triangulo : " + area_triangulo(5,2));
+console.log("Área rectangulo : " + area_rectangulo(5,2));
+console.log("Área circulo : " + area_circulo(1));
+console.log("Celsius a Farenheit : " + celsiusToFarenheit(20));
+esPar(8);
 
-console.log(area_triangulo(5,2));
-console.log(area_rectangulo(5,2));
-console.log(area_circulo(1));
-console.log(celsiusToFarenheit(20));
-console.log(verPar(8));
-
-let operacion = 2;
+let operacion = 2; //ESTO SE LE PEDIRA AL USUARIO
 
 switch (operacion){
     case 1: 
@@ -43,4 +42,6 @@ switch (operacion){
     case 2:
         console.log(area_rectangulo(5,2));
         break;
+
+    //CONTINUARA ....
 }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria Delicias</title>
+    <link rel="stylesheet" href="/ejercicio_DOM/style.css">
+</head>
+<body>
+    <header>
+        <h1>Pasteleria Delicias</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="menu-inicio">Inicio</a></li>
+                <li><a href="#" id="menu-productos">Menu</a></li>
+                <li><a href="#" id="menu-contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bienvenido a nuestra pasteleria!</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum dicta fugit natus officiis aliquid, aut amet, cupiditate velit ut fuga nostrum rem perferendis ipsa! Temporibus itaque nihil possimus fugiat accusamus.</p>
+        </section>
+
+        <section id="productos" style="display: none;" >
+            <h2>Prueba nuestros deliciosos productos!!!</h2>
+            <div id="lista-productos">
+                <div class="producto">
+                    <h3>Pastel de chocolate</h3>
+                    <p>Pastel de chocolate con cobertura de frutas</p>
+                    <button class="agregar-carrito" data-nombre = "pastel de chocolate" data-precio = "250">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <h3>Pastel de fresa</h3>
+                    <p>Pastel de fresas con crema</p>
+                    <button class="agregar-carrito" data-nombre = "pastel de fresa" data-precio = "200">Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <h3>Pastel de vainilla</h3>
+                    <p>Pastel tipo tres leches de Vainilla</p>
+                    <button class="agregar-carrito" data-nombre = "pastel de vainilla" data-precio = "150">Agregar al carrito</button>
+                </div>
+                <div id="carrito">
+                    <h2>Carrito: </h2>
+                    <ul id="lista-carrito"></ul>
+                    <p>Total : $ <span id="total-carrito">0</span></p>
+                </div>
+            </div>
+        </section>
+        <section id="contacto" style="display: none;">
+            <h2>Contactanos</h2>
+            <form id="formulario-contacto">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje</label>
+                <input type="text" id="mensaje" name="mensaje" required>
+
+                <button type="submit">Enviar</button>
+
+            </form>
+            <div id="mensaje-enviado" style="display: none;">
+                <p>Gracias!! mensaje enviado ...</p>
+            </div>
+
+        </section>
+    </main>
+    <script src="/ejercicio_DOM/script.js"></script>
+</body>
+</html>

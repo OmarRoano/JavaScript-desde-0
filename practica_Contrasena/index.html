@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/practica_Contrasena/style.css">
+    <title>Generador de Contraseñas</title>
+</head>
+<body>
+    <div class="generator">
+        <div class="password-container">
+            <h1>Contraseña</h1>
+        </div>
+        <div class="config">
+            <form>
+                <label for="input-password-lenght">Largo de la contraseña</label>
+                <div class="range-container">
+                    <input type="range" min="1" max="20" id="input-password-lenght" value="8">
+                    <h1>8</h1>
+                </div>
+                <div class="options">
+                    <label>
+                        <input type="checkbox" id="uppercase" checked>Mayusculas
+                    </label>
+                    <label>
+                        <input type="checkbox" id="lowercase" checked>Minusculas 
+                    </label>
+                    <label>
+                        <input type="checkbox" id="numbers" checked>Numeros
+                    </label>
+                    <label>
+                        <input type="checkbox" id="symbols" checked>Simbolos
+                    </label>
+                </div>
+                <button type="submit">!Generar!</button>
+            </form>
+        </div>
+    </div>
+    <script src="/practica_Contrasena/script.js"></script>
+</body>
+</html>

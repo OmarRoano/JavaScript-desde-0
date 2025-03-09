@@ -48,7 +48,8 @@ console.log(`Ella se llama ${nombre} tiene ${edad} años y vive en ${ciudad}`);
 let usuario = prompt ("Cual es tu nombre? ");
 let gatos = prompt ("Cuantos gatos tienes? ");
 let perros = prompt ("Cuantos perros tienes? ");
-let num_mascotas = Number(gatos) + Number(perros);
+let num_mascotas = Number(gatos) + Number(perros); //convierte string a numero respetando los decimales
+let num_mascotas2 = parseInt(gatos) + parseInt(perros); //convierte string a numero pero ignorando decimales
 
 //se ven los datos en consola 
 console.log(`${usuario} tiene ${gatos} gatos y ${perros} perros.`);
@@ -57,7 +58,7 @@ console.log(`${usuario} tiene ${gatos} gatos y ${perros} perros.`);
 alert (`${usuario} tiene ${gatos} gatos y ${perros} perros.`);
 alert (`En total tienes ${num_mascotas} mascotas`);
 // se imprimen los datos directamente en la pagina
-document.write(`${usuario} tiene ${gatos} gatos y ${perros} perros.`);
+document.write(`${usuario} tiene ${gatos} gatos y ${perros} perros. `);
 
 // en total tienes x mascotas 
-document.write(`En total tienes ${num_mascotas} mascotas`);
+document.write(`En total tienes ${num_mascotas} mascotas.`);
