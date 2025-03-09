@@ -74,8 +74,8 @@ body {
     font-size: 14px;
     color: #0e0465;
     font-weight: bold;
-    margin-left: auto; /* Mueve el elemento a la derecha */
-    align-self: flex-end; /* Alinea verticalmente al final */
+    margin-left: auto; 
+    align-self: flex-end; 
 }
 
 button {

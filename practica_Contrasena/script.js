@@ -32,7 +32,7 @@ const calculatePasswordStrength = (password) => {
 }
 
 const getPasswordStrengthLabel = (strength) => {
-    if (strength <= 2) return 'Pobre';
+    if (strength <= 2) return 'Débil';
     if (strength <= 4) return 'Medio';
     if (strength <= 5) return 'Fuerte';
     return 'Muy Fuerte';
