@@ -34,8 +34,8 @@ body {
     gap: 20px;
 }
 
-#mensaje{
-    font-style:italic;
+#mensaje {
+    font-style: italic;
     color: #0e0465;
 }
 
@@ -53,7 +53,6 @@ body {
 .range-container h1 {
     font-size: 18px;
     color: #1d55c4;
-    
 }
 
 .options {
@@ -69,6 +68,14 @@ body {
     gap: 5px;
     font-size: 14px;
     color: #0e0465;
+}
+
+#password-strength {
+    font-size: 14px;
+    color: #0e0465;
+    font-weight: bold;
+    margin-left: auto; /* Mueve el elemento a la derecha */
+    align-self: flex-end; /* Alinea verticalmente al final */
 }
 
 button {
@@ -95,7 +102,6 @@ input[type="checkbox"] {
     border-radius: 4px;
     cursor: pointer;
     position: relative;
-    transition: background 0.2s, border 0.2s;
 }
 
 input[type="checkbox"]:checked {
