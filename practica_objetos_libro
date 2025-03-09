@@ -42,8 +42,18 @@ class Libro {
 // se crea el array inicial para guardar los nombres de los capitulos del libro
 let nombreCapitulos = ['I','II','III','IV','V','VI','VII','VIII','IX','X'];
 
-//Se crea el objeto miLibro de la clase Libro
+//Se crean objetos miLibro de la clase Libro
 const miLibro = new Libro("¿Sueñan los androides con ovejas eléctricas?","Philip K. Dick",1968,"prestado",nombreCapitulos);
+
+const miLibro2 = new Libro("Mujeres de ojos Grandes","Ángeles Mastretta",1990,"prestado",nombreCapitulos);
+
+const miLibro3 = new Libro("Las brujas de su majestad","Juno Dawson",2022,"disponible",nombreCapitulos);
+
+//Vector donde se guardan los obejetos de tipo Libro
+let libros = [];
+libros[0] = miLibro;
+libros[1] = miLibro2;
+libros[2] = miLibro3;
 
 //Se ejecuta el metodo que imprime la descripcion del libro
 console.log("_________________________________");
@@ -61,3 +71,13 @@ miLibro.editarCapitulo(9,"El nueve")
 miLibro.borrarCapitulo();
 miLibro.imprimirCapitulos();
 console.log("_________________________________");
+
+
+//Prueba para acceder a los datos de los objetos dentro del vector de libros
+libros[0].describirLibro();
+libros[1].describirLibro();
+libros[2].describirLibro();
+console.log(libros[0].autor);
+console.log(libros[1].autor);
+console.log(libros[2].autor);
+
