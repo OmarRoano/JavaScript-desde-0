@@ -6,36 +6,37 @@ body {
     padding: 20px;
     color: white;
 }
+
 #cajaComentarios {
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    width: 480px;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
 }
+
 #comentarioEntrada {
     background: white;
-    width: 500px;
+    width: 100%;
     padding: 10px;
     border-radius: 5px;
+    border: 1px solid #586f88;
 }
-.btnBorrar {
-    display: block;
-    width: 20%;
-    background: red;
-    color: white;
-    border: none;
-    padding: 5px;
-    cursor: pointer;
-    margin-top: 5px;
-}
-.contenedor{
+
+.contenedor {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-#botonAgregar{
+
+#botonAgregar {
     display: flex;
     justify-content: center;
 }
+
 button {
     background: rgb(45, 215, 30);
     color: black;
@@ -46,15 +47,12 @@ button {
     width: 40%;
     border: 1px solid #586f88;
 }
-#cajaComentarios {
-    margin-top: 20px;
-    width: 480px;
-    background: white;
-    padding: 10px;
-    border-radius: 10px;
-    text-align: left;
-}
+
 .comentario {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     color: black;
     border: 1px solid #586f88;
     background: white;
@@ -62,4 +60,36 @@ button {
     margin: 5px 0;
     border-radius: 5px;
     font-size: 14px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    width: 480px;
 }
+
+.comentario p {
+    margin: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    width: 100%;
+    display: block;
+}
+
+#cajaComentario {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+}
+
+.btnBorrar {
+    width: 100px;
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+    border-radius: 5px;
+}
+
